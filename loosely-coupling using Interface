@@ -1,0 +1,38 @@
+interface Parent  
+{  
+    void foo();  
+}  
+  
+class A implements Parent  
+{  
+    // parameterized constructor  
+    A(int x, int y)  
+    {  
+          
+    }  
+      
+    public void foo()  
+    {  
+        System.out.println("In the foo method of class A.");  
+    }  
+}  
+  
+class B implements Parent  
+{  
+    public void foo()  
+    {  
+        System.out.println("In the foo method of class B.");  
+    }  
+}  
+  
+public class CouplingExample2  
+{  
+  
+                    // main method   
+public static void main(String argvs[])   
+{  
+// creating an object of class B  
+B obj = new B();  
+obj.foo();  
+}  
+} 
